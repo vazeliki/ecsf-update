@@ -21,6 +21,7 @@
     <button class="nav-btn" data-view="home">Home</button>
     <button class="nav-btn" data-view="roles">ECSF Profiles</button>
     <button class="nav-btn" data-view="skills">Skill Areas</button>
+    <button class="nav-btn" data-view="matrix">Skills Matrix</button>
   </nav>
 </div>
 
@@ -112,6 +113,25 @@
       <h3>ECSF Profiles that use this skill</h3>
       <div id="skill-detail-roles"></div>
     </div>
+  </section>
+
+  <!-- ================= SKILLS MATRIX ================= -->
+  <section id="view-matrix" class="view">
+    <div class="section-head">
+      <div>
+        <h2>Skills Matrix</h2>
+        <p class="muted">Every ECSF profile against every skill area, and the proficiency level expected at each intersection. Click a profile or skill area to open it.</p>
+      </div>
+    </div>
+    <div class="matrix-legend">
+      <span>Proficiency level</span>
+      <span class="level l1">L1</span>
+      <span class="level l2">L2</span>
+      <span class="level l3">L3</span>
+      <span class="level l4">L4</span>
+      <span class="matrix-legend-note">Blank = not applicable</span>
+    </div>
+    <div class="matrix-wrap" id="matrix-wrap"></div>
   </section>
 
 </main>
